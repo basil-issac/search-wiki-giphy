@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'search-wiki-giphy';
+  searchText: string = '';
+
+  search() {
+    console.log("Searching " + this.searchText + "...");
+  }
 }
